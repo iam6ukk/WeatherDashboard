@@ -63,9 +63,9 @@ const setPageOf = (pageNumber) => {
     postMin.textContent = data[0].weather_data[i - 1].temperature.min + "°";
     postMax.textContent = data[0].weather_data[i - 1].temperature.max + "°";
     postCondi.textContent = data[0].weather_data[i - 1].conditions;
-    postHumi.textContent = data[0].weather_data[i - 1].humidity + "(%)";
+    postHumi.textContent = data[0].weather_data[i - 1].humidity;
     postPrecip.textContent = data[0].weather_data[i - 1].precipitation;
-    postWind.textContent = data[0].weather_data[i - 1].wind_speed + "(km/h)";
+    postWind.textContent = data[0].weather_data[i - 1].wind_speed;
     postAir.textContent = data[0].weather_data[i - 1].air_quality.pm10;
 
     postContainer.append(

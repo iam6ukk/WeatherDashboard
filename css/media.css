@@ -1,0 +1,91 @@
+/* 데스크탑 규격 */
+@media screen and (min-width: 1024px) {
+}
+
+/* 태블릿 규격 */
+@media screen and (max-width: 1023px) {
+}
+
+/* 모바일 규격 */
+@media screen and (max-width: 767px) {
+  body {
+    height: 100vh;
+  }
+  .navWrap {
+    /* display: block; */
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 260px;
+    top: 30px;
+    right: 30px;
+  }
+
+  .mainWrap {
+    width: 100%;
+  }
+
+  .boardWrap .flex_box {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 3%;
+  }
+
+  .todayWeather {
+    width: 96%;
+  }
+  .info {
+    width: 80px;
+    height: 60px;
+    font-size: 0.9em;
+  }
+  .info > div:nth-child(1) {
+    margin-top: 10px;
+  }
+  .info > div:nth-child(2) {
+    font-weight: 500;
+    color: #2d6a4f;
+    margin-top: 5px;
+  }
+  .infoBox > .info:nth-child(1) {
+    margin-right: 5px;
+  }
+  .infoBox > .info:nth-child(2) {
+    margin-right: 5px;
+  }
+  .infoBox > .info:nth-child(3) {
+    margin-right: 5px;
+  }
+
+  .weekTemp {
+    width: 96%;
+    margin-left: 0px;
+  }
+  .seasonDust {
+    width: 96%;
+    margin-bottom: 28px;
+  }
+  .mark {
+    position: relative;
+    top: -5px;
+  }
+  .monthWeather {
+    width: 96%;
+    margin-left: 0px;
+  }
+  .boardContent4 {
+    margin-left: 2.8%;
+    padding: 5px;
+  }
+  table {
+    width: 98%;
+    font-size: 0.74em;
+    height: 300px;
+  }
+  th {
+    padding: 5px;
+  }
+  .pagination-container {
+    margin-top: 10px;
+  }
+}

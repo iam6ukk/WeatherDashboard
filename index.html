@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,93 +28,97 @@
         </div>
       </div>
       <div class="mainWrap">
-        <h3>Weaher Dashboard</h3>
         <div class="boardWrap">
-          <div class="todayWeather">
-            <div class="boardTitle">오늘의 날씨</div>
-            <hr />
-            <div class="boardContent1">
-              <div>
-                <div class="name"></div>
-                <div class="tempBox">
-                  <img class="icon" />
-                  <div class="temp"></div>
+          <h3>Weaher Dashboard</h3>
+          <div class="flex_box">
+            <div class="todayWeather">
+              <div class="boardTitle">오늘의 날씨</div>
+              <hr />
+              <div class="boardContent1">
+                <div>
+                  <div class="name"></div>
+                  <div class="tempBox">
+                    <img class="icon" />
+                    <div class="temp"></div>
+                  </div>
+
+                  <span class="feelsTemp"></span>
+                  <span class="slash">&nbsp; / &nbsp;</span>
+                  <span class="desc"></span>
                 </div>
 
-                <span class="feelsTemp"></span>
-                <span class="slash">&nbsp; / &nbsp;</span>
-                <span class="desc"></span>
-              </div>
-
-              <div class="infoBox">
-                <div class="info">
-                  <div>습도</div>
-                  <div class="humi"></div>
-                </div>
-                <div class="info">
-                  <div>풍속</div>
-                  <div class="windSpeed"></div>
-                </div>
-                <div class="info">
-                  <div>일출</div>
-                  <div class="sunrise"></div>
-                </div>
-                <div class="info">
-                  <div>일몰</div>
-                  <div class="sunset"></div>
+                <div class="infoBox">
+                  <div class="info">
+                    <div>습도</div>
+                    <div class="humi"></div>
+                  </div>
+                  <div class="info">
+                    <div>풍속</div>
+                    <div class="windSpeed"></div>
+                  </div>
+                  <div class="info">
+                    <div>일출</div>
+                    <div class="sunset"></div>
+                  </div>
+                  <div class="info">
+                    <div>일몰</div>
+                    <div class="sunrise"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="weekTemp">
-            <div class="boardTitle">일주일간 기온 차</div>
-            <hr />
-            <div class="boardContent2"></div>
-          </div>
-          <div class="seasonDust">
-            <div class="boardTitle">계절별 미세먼지 PM-10 (㎍/m3)</div>
-            <hr />
-            <div class="boardContent3">
-              <div id="chart" class="pieChart"></div>
-              <div>출처: 서울특별시 대기환경정보</div>
+            <div class="weekTemp">
+              <div class="boardTitle">일주일간 기온 차</div>
+              <hr />
+              <div class="boardContent2"></div>
             </div>
           </div>
-          <div class="monthWeather">
-            <div class="boardTitle">월별 날씨 정보</div>
-            <hr />
-            <div class="boardContent4">
-              <table>
-                <thead>
-                  <tr>
-                    <th>일자</th>
-                    <th>최저기온</th>
-                    <th>최고기온</th>
-                    <th>날씨</th>
-                    <th>습도 (%)</th>
-                    <th>강수량</th>
-                    <th>풍속 (km/h)</th>
-                    <th>대기질 (pm-10)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="post-container">
-                    <td class="post-date"></td>
-                    <td class="post-min"></td>
-                    <td class="post-max"></td>
-                    <td class="post-condi"></td>
-                    <td class="post-humi"></td>
-                    <td class="post-precip"></td>
-                    <td class="post-wind"></td>
-                    <td class="post-air"></td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="pagination-container">
-                <div class="prev-button">이전</div>
-                <div class="number-button-wrapper">
-                  <span class="number-button">1</span>
+          <div class="flex_box">
+            <div class="seasonDust">
+              <div class="boardTitle">계절별 미세먼지 PM-10 (㎍/m3)</div>
+              <hr />
+              <div class="boardContent3">
+                <div id="chart" class="pieChart"></div>
+                <div class="mark">출처: 서울특별시 대기환경정보</div>
+              </div>
+            </div>
+            <div class="monthWeather">
+              <div class="boardTitle">월별 날씨 정보</div>
+              <hr />
+              <div class="boardContent4">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>일자</th>
+                      <th>최저기온</th>
+                      <th>최고기온</th>
+                      <th>날씨</th>
+                      <th>습도</th>
+                      <th>강수량</th>
+                      <th>풍속 <br />(km/h)</th>
+                      <th>대기질 <br />(pm-10)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="post-container">
+                      <td class="post-date"></td>
+                      <td class="post-min"></td>
+                      <td class="post-max"></td>
+                      <td class="post-condi"></td>
+                      <td class="post-humi"></td>
+                      <td class="post-precip"></td>
+                      <td class="post-wind"></td>
+                      <td class="post-air"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="pagination-container">
+                  <div class="prev-button">이전</div>
+                  <div class="number-button-wrapper">
+                    <span class="number-button">1</span>
+                  </div>
+                  <div class="next-button">이후</div>
                 </div>
-                <div class="next-button">이후</div>
               </div>
             </div>
           </div>

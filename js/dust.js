@@ -35,7 +35,8 @@ console.log(valueData);
 var options = {
   series: valueData,
   chart: {
-    width: 400,
+    width: "100%",
+    height: 300,
     type: "pie",
   },
   labels: seasonData,
