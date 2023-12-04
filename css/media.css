@@ -4,21 +4,63 @@
 
 /* 태블릿 규격 */
 @media screen and (max-width: 1023px) {
+  .mainWrap {
+    width: 100%;
+  }
+
+  .info {
+    width: 70px;
+    height: 60px;
+    font-size: 0.78em;
+  }
+  .info > div:nth-child(1) {
+    margin-top: 10px;
+  }
+  .info > div:nth-child(2) {
+    font-weight: 500;
+    color: #2d6a4f;
+    margin-top: 3px;
+  }
+  .infoBox > .info:nth-child(1) {
+    margin-right: 5px;
+  }
+  .infoBox > .info:nth-child(2) {
+    margin-right: 5px;
+  }
+  .infoBox > .info:nth-child(3) {
+    margin-right: 5px;
+  }
+
+  .apexcharts-legend {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .mark {
+    position: relative;
+    top: 130px;
+  }
+
+  .boardContent4 {
+    margin-left: 2.8%;
+    padding: 5px;
+  }
+  table {
+    width: 98%;
+    font-size: 0.8em;
+    height: 300px;
+  }
+  th {
+    padding: 5px;
+  }
+  .pagination-container {
+    margin-top: 10px;
+  }
 }
 
 /* 모바일 규격 */
 @media screen and (max-width: 767px) {
   body {
     height: 100vh;
-  }
-  .navWrap {
-    /* display: block; */
-    display: none;
-    position: absolute;
-    width: 100px;
-    height: 260px;
-    top: 30px;
-    right: 30px;
   }
 
   .mainWrap {

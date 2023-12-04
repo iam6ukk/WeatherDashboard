@@ -13,10 +13,11 @@ body {
 .wrapper {
   display: flex;
   background: #e9ecef;
+  min-height: 100vh;
 }
 
 /* 네비게이션 */
-.navWrap {
+/* .navWrap {
   min-width: 190px;
   background: #f8f9fa;
   padding: 18px;
@@ -52,7 +53,7 @@ ul > div > li:before {
   display: inline-block;
   vertical-align: middle;
   padding: 0px 5px 6px 0px;
-}
+} */
 
 /* 메인 컨텐츠 */
 .mainWrap {
