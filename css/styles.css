@@ -9,51 +9,14 @@
 body {
   margin: 0 auto;
   font-family: "Pretendard-Regular";
+  overflow-x: hidden;
 }
 .wrapper {
   display: flex;
   background: #e9ecef;
   min-height: 100vh;
+  min-width: 1536px;
 }
-
-/* 네비게이션 */
-/* .navWrap {
-  min-width: 190px;
-  background: #f8f9fa;
-  padding: 18px;
-  box-shadow: 5px 5px 10px lightgray;
-  height: 100vh;
-  box-sizing: border-box;
-}
-.navTitle {
-  font-weight: bold;
-  font-size: 18px;
-}
-ul {
-  list-style: none;
-  cursor: pointer;
-}
-ul:before {
-  content: "- ";
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0px 5px 6px 0px;
-}
-
-ul > div > li {
-  padding: 0px 5px 6px 0px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #efefef;
-  font-size: 14px;
-}
-
-ul > div > li:before {
-  content: "> ";
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0px 5px 6px 0px;
-} */
 
 /* 메인 컨텐츠 */
 .mainWrap {
@@ -130,6 +93,10 @@ ul > div > li:before {
   font-size: 16px;
   border: 1px solid #2d6a4f;
   margin-top: 20px;
+  margin-left: 5px;
+}
+.info:first-child {
+  margin-left: 0px;
 }
 
 .info > div:nth-child(1) {
