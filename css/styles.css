@@ -28,7 +28,6 @@ body {
 .boardWrap {
   display: flex;
   flex-wrap: wrap;
-  padding: 42px 0;
   box-sizing: border-box;
   justify-content: start;
 }
