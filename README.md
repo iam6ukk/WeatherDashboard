@@ -41,12 +41,12 @@ openAPI 사용과 데이터 파싱을 공부하기 위해 제작한 대시보드
 
 
 #### 🧑‍💻 회고 
-```월별 날씨 정보```에서 데이터 파싱을 위해 month.json 파일을 page.js 파일에 import한 후 module 타입으로 js import를 했다.   
-이 과정에서 cors 오류가 발생하였고 원인을 찾던 중 관련 정보를 얻을 수 있었다.
+```월별 날씨 정보```에서 데이터 파싱을 위해 month.json 파일을 page.js 파일에 import한 후 module 타입으로 js import를 했었습니다.   
+이 과정에서 cors 오류가 발생하였고 원인을 찾던 중 관련 정보를 얻을 수 있었습니다.
 > type을 module로 설정한<script> 태그가 포함된 HTML 파일을 로컬에서 로드할 경우 자바스크립트 모듈 보안 요구사항으로 인해 CORS 오류가 발생한다고 한다. 이 때문에 ajax로 요청한 것임 아님에도 불구하고 CORS 오류가 발생한다.
 
-file:///c: ~  url에 의해 cors block이 되었고 http-server 를 사용해 해결할 수 있었다.   
-package.json 파일에 포트번호를 설정해주었다.
+file:///c: ~  url에 의해 cors block이 되었고 http-server 를 사용해 해결할 수 있었습니다.   
+package.json 파일에 포트번호를 설정해주었습니다.
 ```
 "scripts": {
     "start": "npx http-server -p 5500"
