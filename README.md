@@ -55,8 +55,8 @@ package.json 파일에 포트번호를 설정해주었다.
 <br/>
 
 #### 🧩 참조
-OpenWeatherMap: https://openweathermap.org/api    
-서울특별시 대기환경정보: https://cleanair.seoul.go.kr/statistics/seasonAverage   
-js module cors 관련: https://steadev.tistory.com/72   
-js module cors 관련: https://klmhyeonwooo.tistory.com/23
+[OpenWeatherMap](https://openweathermap.org/api)    
+[서울특별시 대기환경정보](https://cleanair.seoul.go.kr/statistics/seasonAverage)   
+[Javascript module 타입의 cors 문제](https://steadev.tistory.com/72)   
+[바닐라 JS, 모듈화 진행 시 CORS 에러 해결 방안](https://klmhyeonwooo.tistory.com/23)
 
